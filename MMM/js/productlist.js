@@ -31,6 +31,9 @@ $(function () {
                     render(--page);
                 })
                 $('.page .next').off().on('click', function () {
+                    if(parseInt($('.page-n').val()) == list.length){
+                        return;
+                    }
                     render(++page);
                 })
 
