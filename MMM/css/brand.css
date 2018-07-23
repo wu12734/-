@@ -17,6 +17,15 @@
   background-image: linear-gradient(#fff, #e0e0e0);
   color: #92731e;
 }
+.menu li:nth-child(2) span:nth-child(1) {
+  background: darkorange;
+}
+.menu li:nth-child(3) span:nth-child(1) {
+  background: #50e616;
+}
+.menu li:nth-child(n+4) span:nth-child(1) {
+  background: #ccc;
+}
 .menu a {
   position: relative;
 }
