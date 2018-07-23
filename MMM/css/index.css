@@ -1,0 +1,68 @@
+.nav a {
+  width: 25%;
+  height: 1rem;
+  float: left;
+  text-align: center;
+  padding: .16rem;
+}
+.nav a img {
+  width: .5rem;
+  margin-bottom: .05rem;
+}
+.nav a p {
+  font-size: .12rem;
+}
+.nav a:nth-child(n+9) {
+  display: none;
+}
+.tui {
+  background: #ff841d;
+  background-image: linear-gradient(#ffcfa7, #ff841d);
+  height: .3rem;
+  font-size: .14rem;
+  color: #fff;
+  padding: 0 .1rem;
+}
+.tui span {
+  line-height: .3rem;
+}
+.cargo li {
+  border-bottom: 1px solid #e2dede;
+}
+.cargo ul a {
+  height: 1.2rem;
+  padding: .1rem .2rem .1rem 1.3rem;
+  position: relative;
+}
+.cargo img {
+  width: 100%;
+}
+.car-img {
+  width: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: .15rem;
+}
+.car-txt {
+  width: 100%;
+  height: 100%;
+}
+.car-txt p:first-child {
+  color: #000;
+  height: .42rem;
+}
+.car-txt p:nth-child(2) {
+  color: red;
+}
+.car-txt span {
+  color: #888;
+}
+.more {
+  height: 0.4rem;
+  padding: .03rem .1rem;
+}
+.more button {
+  width: 100%;
+}

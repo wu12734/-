@@ -1,0 +1,116 @@
+@color : #ff841d;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    background: #fff;
+    font-size: 100px;
+}
+
+ul,
+li {
+    list-style: none;
+    font-size: 12px;
+}
+
+a {
+    display: block;
+}
+
+.line {
+    height: .1rem;
+    background: #f1f1f1;
+}
+
+// 顶部-----------------------
+.top {
+    height: .5rem;
+    background: @color;
+    padding: .125rem;
+    a {
+        height: .25rem;
+        img {
+            height: .25rem;
+            position: relative;
+            bottom: .2rem;
+        }
+    }
+    a:nth-of-type(2) {
+        img {
+        height: 0.35rem;
+        bottom: .15rem;
+        }
+    }
+}
+
+.search {
+    height: 0.5rem;
+    padding: .1rem;
+    padding-right: .8rem;
+    position: relative;
+    input {
+        width: 100%;
+        height: 0.3rem;
+        background: #f1f1f1;
+        border-radius: .15rem;
+        font-size: .12rem;
+        border: 0;
+    }
+    button {
+        border-radius: .15rem;
+        background: @color;
+        width: .6rem;
+        position: absolute;
+        right: .1rem;
+        color: #fff;
+        font-size: .16rem;
+        padding: 4px 10px;
+        border: 0;
+    }
+}
+
+footer {
+    background: #f1f1f1;
+    ul {
+        border: 1px solid #ccc;
+        border-width: 1px 0;
+        text-align: center;
+        height: .35rem;
+        line-height: .34rem;
+        margin: .25rem 0;
+    }
+    li {
+        width: 33%;
+        float: left;
+        a {
+            color: #000;
+            font-size: .14rem;
+        }
+    }
+    li:nth-child(n+2){
+        border-left: 1px solid #999;
+    }
+    p {
+        font-size: .12rem;
+        text-align: center;
+        margin: 0;
+        padding-bottom: .2rem;
+        span:first-child {
+            color: red;
+        }
+        span:nth-child(2){
+            color: #000;
+        }
+        span:nth-child(3){
+            color: #999;
+        }
+        span:nth-child(4) {
+            display: block;
+            color: #666;
+            height: .18rem;
+        }
+    }
+}

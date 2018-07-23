@@ -1,0 +1,118 @@
+.main {
+  padding: .2rem;
+}
+.cargo h3 {
+  font-size: .2rem;
+  margin-bottom: -0.17rem;
+}
+.cargo span {
+  color: #888;
+  font-size: .12rem;
+}
+.cargo .img-sm {
+  font-size: .14rem;
+  margin: .03rem 0 .1rem 0;
+}
+.cargo .img-sm img {
+  width: 1.2rem;
+  float: right;
+}
+.cargo .img-lg {
+  text-align: center;
+}
+.state {
+  text-align: center;
+  margin-top: .2rem;
+}
+.state ul {
+  width: 1.5rem;
+  margin: 0 auto;
+  padding: .05rem;
+  border-right: 2px solid #e2e2e2;
+}
+.state li {
+  height: .25rem;
+}
+.state a {
+  width: 1.3rem;
+  margin: 0 auto;
+  border-bottom: 1px dashed #868686;
+}
+.state span {
+  color: #000;
+  font-size: .14rem;
+  display: flex;
+  justify-content: space-around;
+}
+.state strong {
+  color: #ff7800;
+  font-weight: 400;
+}
+.go {
+  font-size: .14rem;
+  margin: .2rem 0;
+}
+.go a {
+  width: 100%;
+  height: .35rem;
+  background: #f58624;
+  border-radius: .05rem;
+  color: #fff;
+  text-align: center;
+  line-height: .35rem;
+}
+.weixin {
+  margin-bottom: .2rem;
+}
+.weixin img {
+  width: 100%;
+}
+.comment {
+  font-size: .18rem;
+}
+.comment .tit {
+  margin-bottom: .2rem;
+}
+.comment .form {
+  position: relative;
+  margin-bottom: .1rem;
+}
+.comment .form textarea {
+  height: 1.3rem;
+}
+.comment .ctrl {
+  position: absolute;
+  bottom: .2rem;
+  right: 0;
+}
+.comment .ctrl input {
+  background: #f58624;
+  border: 1px solid #f58624;
+}
+.comment .ui-border-b {
+  margin-bottom: .35rem;
+}
+.comment .userimg {
+  margin-right: .1rem;
+  float: left;
+}
+.comment .userimg img {
+  width: .45rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.comment .con {
+  width: 100%;
+  font-size: .14rem;
+}
+.comment .name {
+  display: flex;
+  justify-content: space-between;
+}
+.comment .username {
+  color: #3b93b6;
+  margin-bottom: .05rem;
+}
+.comment .time {
+  color: #999;
+}

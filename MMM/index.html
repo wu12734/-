@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="mui-pull-left" href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+            <a class="mui-pull-right" href="index.html">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input class="mui-pull-left" type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+    </header>
+
+    <!-- 隔层 -->
+    <div class="line"></div>
+
+    <div class="nav mui-clearfix">
+        <!-- 模板 -->
+    </div>
+
+    <div class="line"></div>
+
+    <div class="main">
+        <div class="tui">
+            <span>超值折扣推荐</span>
+            <span class="fa fa-chevron-right mui-pull-right"></span>
+        </div>
+        <!-- 商品 -->
+        <div class="cargo">
+            <ul>
+                <!-- 模板 -->
+            </ul>
+
+            <div class="more">
+                <a href="moneyctrl.html">
+                    <button>更多优惠信息
+                        <span class="fa fa-angle-double-right"></span>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="tui">
+        <span>品牌排行</span>
+        <span class="fa fa-chevron-right mui-pull-right"></span>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-arrow-circle-up"></span>
+                    返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <span>手机APP下载</span>
+            <span>慢慢买手机版 -- </span>
+            <span>掌上比价平台</span>
+            <span>m.manmanbuy.com</span>
+        </p>
+    </footer>
+
+
+</body>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/index.js"></script>
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <a data-index="{{v.indexmenuId}}" href="{{v.titlehref}}">
+        {{@v.img}}
+        <p>{{v.name}}</p>
+    </a>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <li>
+        <a href="moneyproduct.html?productid={{v.productId}}">
+            <div class="car-img">
+                {{@v.productImg2}}
+            </div>
+            <div class="car-txt">
+                <p>{{v.productName}}</p>
+                <p>{{v.productPinkage}}</p>
+                <div>
+                    <span>{{v.productFrom}} |{{v.productTime}}</span>
+                    <span class="mui-pull-right fa fa-commenting-o">
+                        {{v.productComCount}}
+                    </span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

@@ -1,0 +1,129 @@
+.bread {
+  height: .35rem;
+  font-size: .14rem;
+  padding: 0 .2rem;
+  background-image: linear-gradient(#fff, #e0e0e0);
+}
+.bread a {
+  display: inline-block;
+  line-height: .35rem;
+  color: #202020;
+}
+.ban {
+  margin-top: .2rem;
+  text-align: center;
+  font-size: .16rem;
+}
+.ban p {
+  color: #000;
+  font-size: .16rem;
+}
+.ban .main-img {
+  height: 3rem;
+  position: relative;
+}
+.ban .main-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ban ul {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, orange, #f1ef64);
+  border: 1px solid red;
+  border-width: 1px 0;
+}
+.ban ul li {
+  height: .4rem;
+  flex: 1;
+  line-height: .4rem;
+  color: #fff;
+  font-size: .16rem;
+}
+.ban ul li:nth-child(n+2) {
+  border-left: 1px solid red;
+}
+.ban .from {
+  height: .6rem;
+  line-height: .6rem;
+  padding: 0 .2rem;
+  border-bottom: 1px solid #ccc;
+}
+.ban .from tr {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+.ban .from tr td:nth-child(1) {
+  flex: 1;
+}
+.ban .from tr td:nth-child(2) {
+  flex: 3;
+}
+.ban .from tr td:nth-child(3) {
+  flex: 3;
+}
+.ban .from tr td:nth-child(4) {
+  flex: 1;
+}
+.ban .from a {
+  color: #000;
+}
+.ban .from span {
+  width: .8rem !important;
+  height: .4rem !important;
+  line-height: .4rem !important;
+  font-size: .16rem !important;
+}
+.cue {
+  color: #8b8b8b;
+  font-size: .14rem;
+  height: .4rem;
+  line-height: .4rem;
+  padding: 0 .2rem;
+  margin-bottom: .2rem;
+}
+.comment li {
+  border-bottom: 1px solid #ccc;
+  padding: .2rem;
+}
+.comment li p:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.comment li p:nth-child(2) {
+  text-align: right;
+}
+.title {
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .18rem;
+  text-align: center;
+  background: #ccc;
+  border-top: 0.04rem solid #5c5b5b;
+}
+.more {
+  height: 0.6rem;
+  padding: .1rem .4rem;
+  position: relative;
+}
+.more a {
+  height: 100%;
+}
+.more button {
+  font-size: .16rem;
+  width: 100%;
+  border-radius: .1rem;
+  height: 100%;
+  background-image: linear-gradient(#fff, #d2d2d2);
+}
+.more .more-line {
+  position: absolute;
+  height: 0.25rem;
+  background: #f1f1f1;
+  width: 100%;
+  left: 0;
+  bottom: -0.25rem;
+}

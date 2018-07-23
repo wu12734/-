@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="mui-pull-left" href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+            <a class="mui-pull-right" href="index.html">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input class="mui-pull-left" type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+    </header>
+
+    <div class="line"></div>
+
+    <section>
+        <ul class="menu mui-table-view">
+            <!-- 模板 -->
+        </ul>
+    </section>
+
+    <!-- 底部 -->
+    <footer>
+        <ul>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-arrow-circle-up"></span>
+                    返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <span>手机APP下载</span>
+            <span>慢慢买手机版 -- </span>
+            <span>掌上比价平台</span>
+            <span>m.manmanbuy.com</span>
+        </p>
+
+    </footer>
+
+
+</body>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/category.js"></script>
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li class="mui-table-view-cell mui-collapse">
+        <a data-id="{{v.titleId}}" class="list mui-navigate-right" href="#">{{v.title}}</a>
+        <div class="mui-collapse-content">
+            <ul class="second">
+            </ul>
+        </div>
+    </li>
+
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+        <li>
+            <a data-id="{{v.categoryId}}" href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a>
+        </li>
+    {{/each}}
+</script>
+
+</html>

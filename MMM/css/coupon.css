@@ -1,0 +1,24 @@
+.top {
+  background: rgba(250, 37, 37, 0.8);
+}
+.cargo {
+  padding: .2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cargo li {
+  width: 1.2rem;
+  height: 1.1rem;
+  padding: .15rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 .06rem .2rem 0;
+}
+.cargo img {
+  width: .6rem;
+}
+.cargo p {
+  font-size: .12rem;
+  color: #000;
+}

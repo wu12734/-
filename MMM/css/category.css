@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  background: #f1f1f1;
+}
+section .menu {
+  background: #f1f1f1;
+}
+section .menu > li {
+  font-size: .16rem;
+  font-weight: 700;
+}
+section .menu > li:nth-child(n+2) {
+  border-top: 1px solid #d6d6d6;
+}
+section .menu > li div {
+  padding: 0 !important;
+}
+.second li {
+  width: 33.33%;
+  float: left;
+  height: .4rem;
+  border: 1px solid #c9c9c9;
+  border-width: 0 1px 1px 0;
+  font-size: .14rem;
+  line-height: .4rem;
+  text-align: center;
+}
+.second li a {
+  color: #666;
+}
+.second li:nth-child(3n) {
+  border-right: 0;
+}
+.mui-table-view-cell:after {
+  height: 0;
+}

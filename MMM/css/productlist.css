@@ -1,0 +1,62 @@
+.bread {
+  height: .35rem;
+  font-size: .14rem;
+  padding: 0 .2rem;
+  background-image: linear-gradient(#fff, #e0e0e0);
+}
+.bread a {
+  display: inline-block;
+  line-height: .35rem;
+  color: #202020;
+}
+.bread button {
+  border-radius: .06rem;
+  margin-top: .008rem;
+  background-image: linear-gradient(#e0e0e0, #fff);
+}
+.cargo li {
+  border-bottom: 1px solid #e2dede;
+}
+.cargo ul a {
+  height: 1.2rem;
+  padding: .1rem .2rem .1rem 1.3rem;
+  position: relative;
+}
+.cargo img {
+  width: 100%;
+}
+.car-img {
+  width: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: .15rem;
+}
+.car-txt {
+  width: 100%;
+  height: 100%;
+}
+.car-txt p:first-child {
+  color: #000;
+  height: .42rem;
+}
+.car-txt p:nth-child(2) {
+  color: red;
+}
+.car-txt span {
+  color: #888;
+}
+.page {
+  margin-top: .15rem;
+  display: flex;
+  justify-content: space-around;
+  height: .36rem;
+}
+.page .page-n {
+  width: .8rem;
+  border: 1px solid #ccc !important;
+  margin: 0;
+  padding: 8px 15px;
+  background: url('../images/arrow.png') 0.6rem no-repeat;
+}

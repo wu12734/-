@@ -1,0 +1,118 @@
+.bread {
+    height: .35rem;
+    font-size: .14rem;
+    padding: 0 .2rem;
+    background-image: linear-gradient(#fff, #e0e0e0);
+    a {
+        display: inline-block;
+        line-height: .35rem;
+        color: #202020;
+    }
+}
+
+.title {
+    font-size: .14rem;
+    font-weight: 700;
+    padding: .06rem .2rem;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(#fff, #e0e0e0);
+    color: #92731e;
+}
+
+.menu {
+    a {
+        position: relative;
+    }
+    span:nth-child(1){
+        display: inline-block;
+        background: red;
+        width: .18rem;
+        height: .18rem;
+        line-height: .2rem;
+        color: #fff;
+        text-align: center;
+        margin-right: .1rem;
+    }
+    p {
+        margin-left: .3rem;
+        font-size: .12rem;
+    }
+    span:last-child {
+        font-size: .3rem;
+        position: absolute;
+        right: .15rem;
+        bottom: .15rem;
+        color: #a5a2a2;
+    }
+}
+
+.mui-table-view-cell:after {
+    left: 0;
+}
+
+.cargo {
+    li {
+        border-bottom: 1px solid rgb(226, 222, 222);
+    }
+    ul {
+        a {
+            height: 1.2rem;
+            padding: .1rem .2rem .1rem 1.3rem;
+            position: relative;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+.car-img {
+    width: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: .15rem;
+}
+.car-txt {
+    width: 100%;
+    height: 100%;
+    p:first-child {
+        color: #000;
+        height: .42rem;
+    }
+    p:nth-child(2) {
+        font-size: .16rem;
+        color: red;
+        span {
+            color: rgb(255, 102, 0);
+        }
+    }
+    span {
+        color: #888;
+    }
+}
+
+.com {
+ li {
+    padding: .1rem .2rem .1rem 1.3rem;
+    position: relative;
+ }
+}
+.com-txt {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: .1rem;
+    width: 100%;
+    position: relative;
+    span {
+        font-size: .16rem;
+        color: rgb(255, 102, 0);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        border: .07rem solid #000;
+        border-color: transparent #ccc transparent transparent;
+        top: .07rem;
+        left: -.15rem;
+    }
+}

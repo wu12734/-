@@ -1,0 +1,138 @@
+.top {
+    background: rgb(241, 78, 29);
+}
+
+.title {
+    background: #ececec;
+    height: .38rem;
+    overflow:auto;
+    white-space: nowrap;
+    display: flex;
+    a {
+        padding: 0 .3rem;
+        font-size: .15rem;
+        height: 0.38rem;
+        color: #000;
+        line-height: .38rem;
+    }
+}
+
+//商品
+.cargo {
+    li {
+        border-bottom: 1px solid rgb(226, 222, 222);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.car {
+    height: 1.7rem;
+    padding: .1rem .2rem .1rem 1.3rem;
+    position: relative;
+    p:nth-child(2) {
+        font-size: .3rem;
+        i {
+            margin-right: .1rem;
+        }
+        i,
+        em {
+            font-style: normal;
+            font-size: .16rem;
+        }
+        del {
+            margin-left: .1rem;
+            font-size: .12rem;
+            color: #ccc;
+        }
+    }
+}
+
+.bar {
+    i {
+        display: inline-block;
+        width: 1rem;
+        background: pink;
+        height: .14rem;
+        border-radius: .07rem;
+        text-align: center;
+        font-style: normal;
+        line-height: .14rem;
+        border: 1px solid red;
+        position: relative;
+        top: .02rem;
+        overflow: hidden;
+        em {
+            background: red;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
+        span {
+            color: #fff;
+            font-weight: 700;
+            position: absolute;
+        }
+    }
+    b {
+        color: red;
+        margin-left: .1rem;
+    }
+}
+
+.car-img {
+    width: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: .15rem;
+}
+.car-txt {
+    width: 100%;
+    height: 100%;
+    a {
+        color: red;
+    }
+    p:first-child {
+        color: #000;
+        height: .42rem;
+    }
+    p:nth-child(2) {
+        color: red;
+    }
+    span {
+        color: #888;
+    }
+    .left-a a {
+        width: 1.4rem;
+        height: .25rem;
+        line-height: .25rem;
+        border: .5px dotted red;
+        text-align: center;
+    }
+    .right-a a {
+        width: .7rem;
+        height: .25rem;
+        line-height: .28rem;
+        background: rgb(255, 92, 51);
+        text-align: center;
+        color: #fff;
+        border-radius: .05rem;
+    }
+}
+
+.page {
+    margin-top: .15rem;
+    display: flex;
+    justify-content: space-around;
+    height: .36rem;
+    .page-n {
+        width: .8rem;
+        border: 1px solid #ccc !important;
+        margin: 0;
+        padding: 8px 15px;
+        background: url('../images/arrow.png') .6rem  no-repeat;
+    }
+}

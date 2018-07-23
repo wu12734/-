@@ -1,0 +1,127 @@
+.top {
+  background: #f14e1d;
+}
+.title {
+  background: #ececec;
+  height: .38rem;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+}
+.title a {
+  padding: 0 .3rem;
+  font-size: .15rem;
+  height: 0.38rem;
+  color: #000;
+  line-height: .38rem;
+}
+.cargo li {
+  border-bottom: 1px solid #e2dede;
+}
+.cargo img {
+  width: 100%;
+}
+.car {
+  height: 1.7rem;
+  padding: .1rem .2rem .1rem 1.3rem;
+  position: relative;
+}
+.car p:nth-child(2) {
+  font-size: .3rem;
+}
+.car p:nth-child(2) i {
+  margin-right: .1rem;
+}
+.car p:nth-child(2) i,
+.car p:nth-child(2) em {
+  font-style: normal;
+  font-size: .16rem;
+}
+.car p:nth-child(2) del {
+  margin-left: .1rem;
+  font-size: .12rem;
+  color: #ccc;
+}
+.bar i {
+  display: inline-block;
+  width: 1rem;
+  background: pink;
+  height: .14rem;
+  border-radius: .07rem;
+  text-align: center;
+  font-style: normal;
+  line-height: .14rem;
+  border: 1px solid red;
+  position: relative;
+  top: .02rem;
+  overflow: hidden;
+}
+.bar i em {
+  background: red;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.bar i span {
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+}
+.bar b {
+  color: red;
+  margin-left: .1rem;
+}
+.car-img {
+  width: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: .15rem;
+}
+.car-txt {
+  width: 100%;
+  height: 100%;
+}
+.car-txt a {
+  color: red;
+}
+.car-txt p:first-child {
+  color: #000;
+  height: .42rem;
+}
+.car-txt p:nth-child(2) {
+  color: red;
+}
+.car-txt span {
+  color: #888;
+}
+.car-txt .left-a a {
+  width: 1.4rem;
+  height: .25rem;
+  line-height: .25rem;
+  border: .5px dotted red;
+  text-align: center;
+}
+.car-txt .right-a a {
+  width: .7rem;
+  height: .25rem;
+  line-height: .28rem;
+  background: #ff5c33;
+  text-align: center;
+  color: #fff;
+  border-radius: .05rem;
+}
+.page {
+  margin-top: .15rem;
+  display: flex;
+  justify-content: space-around;
+  height: .36rem;
+}
+.page .page-n {
+  width: .8rem;
+  border: 1px solid #ccc !important;
+  margin: 0;
+  padding: 8px 15px;
+  background: url('../images/arrow.png') 0.6rem no-repeat;
+}

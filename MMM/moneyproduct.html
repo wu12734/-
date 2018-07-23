@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common2.css">
+    <link rel="stylesheet" href="css/moneyproduct.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="mui-pull-left" href="javascript:history.go(-1);">
+                <span class="fa fa-chevron-left"></span>
+            </a>
+            <h3>国内折扣</h3>
+            <a class="mui-pull-right" href="index.html">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- 模板tpl -->
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-arrow-circle-up"></span>
+                    返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <span>手机APP下载</span>
+            <span>慢慢买手机版 -- </span>
+            <span>掌上比价平台</span>
+            <span>m.manmanbuy.com</span>
+        </p>
+    </footer>
+
+
+</body>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/get.js"></script>
+<script src="js/moneyproduct.js"></script>
+<script type="text/html" id="tpl">
+    <div class="cargo">
+        {{each result v i}}
+        <h3>{{v.productName}}</h3>
+        <span>{{v.productFrom}} </span>
+        <span>{{v.productTime}} </span>
+        <span>{{v.productTips}}</span>
+        <div class="img-sm">
+            {{@v.productImgSm}} {{v.productInfo}}
+            <p> </p>
+            {{v.productInfo1}}
+        </div>
+        <div class="img-lg">
+            {{@v.productImgLg}}
+        </div>
+        <div class="state">
+            {{@v.productCity}}
+        </div>
+    </div>
+
+    <div class="go">
+        <a href="#">前往购买</a>
+    </div>
+    <div class="weixin">
+        <img src="images/mmbweixin2.png" alt="">
+    </div>
+    <div class="comment">
+        {{@v.productComment}}
+    </div>
+    
+    {{/each}}
+</script>
+
+
+</html>

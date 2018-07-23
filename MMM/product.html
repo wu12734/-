@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="mui-pull-left" href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+            <a class="mui-pull-right" href="index.html">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input class="mui-pull-left" type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+    </header>
+
+    <div class="line"></div>
+
+    <!-- 面包屑导航 -->
+    <div class="bread">
+        <div class="nav mui-pull-left">
+            <a href="index.html">首页</a>
+            <a href="category.html">> 全部分类</a>
+            <!-- 模板1 -->
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="ban">
+            <!-- 模板2 -->
+        </div>
+        <div class="cue">
+            *实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="title">
+            网友评论
+        </div>
+        <ul>
+            <!-- 模板3 -->
+        </ul>
+        <div class="more">
+            <a href="#">
+                <button>查看更多评价</button>
+            </a>
+            <div class="more-line"></div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <ul>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-arrow-circle-up"></span>
+                    返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <span>手机APP下载</span>
+            <span>慢慢买手机版 -- </span>
+            <span>掌上比价平台</span>
+            <span>m.manmanbuy.com</span>
+        </p>
+
+    </footer>
+
+
+</body>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/get.js"></script>
+<script src="js/product.js"></script>
+
+<script type="text/html" id="tpl">
+    <a href="productlist.html?categoryid={{result.cat.categoryId}}&category={{result.cat.category}}&pageid=1">> {{result.cat.category}} </a>
+
+    {{each result v i}}
+    <a href="#">> {{v.productName.split(' ')[0]}}</a>
+    {{/each}}
+
+</script>
+
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <p>{{v.productName}}</p>
+    <div class="main-img">
+        {{@v.productImg}}
+    </div>
+    <ul>
+        <li>比价购买</li>
+        <li>产品参数</li>
+        <li>评价</li>
+    </ul>
+    <div class="from">
+        {{@v.bjShop}}
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+        <p>
+            <span>{{v.comName}}</span>
+            <span>{{v.comTime}}</span>
+        </p>
+        <p>{{v.comFrom}}</p>
+        <p>{{v.comContent}}</p>
+    </li>
+    {{/each}}
+</script>
+
+</html>

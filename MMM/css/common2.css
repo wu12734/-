@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  background: #fff;
+  font-size: 100px;
+}
+ul,
+li {
+  list-style: none;
+  font-size: 12px;
+}
+a {
+  display: block;
+}
+.line {
+  height: .1rem;
+  background: #f1f1f1;
+}
+.top {
+  height: .6rem;
+  color: aliceblue;
+  position: relative;
+  text-align: center;
+  background: #ff841d;
+  padding: .125rem;
+}
+.top a img {
+  height: .25rem;
+  position: relative;
+  bottom: .2rem;
+}
+.top span {
+  font-size: .28rem;
+  color: aliceblue;
+  position: absolute;
+  top: .2rem;
+  left: .2rem;
+}
+.top a:nth-of-type(2) {
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+}
+.top a:nth-of-type(2) img {
+  height: 0.35rem;
+  bottom: .15rem;
+}
+footer {
+  background: #f1f1f1;
+}
+footer ul {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  text-align: center;
+  height: .35rem;
+  line-height: .34rem;
+  margin: .25rem 0;
+}
+footer li {
+  width: 33%;
+  float: left;
+}
+footer li a {
+  color: #000;
+  font-size: .14rem;
+}
+footer li:nth-child(n+2) {
+  border-left: 1px solid #999;
+}
+footer p {
+  font-size: .12rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: .2rem;
+}
+footer p span:first-child {
+  color: red;
+}
+footer p span:nth-child(2) {
+  color: #000;
+}
+footer p span:nth-child(3) {
+  color: #999;
+}
+footer p span:nth-child(4) {
+  display: block;
+  color: #666;
+  height: .18rem;
+}
