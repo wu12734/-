@@ -15,11 +15,12 @@ $(function () {
 
             $('.cargo a').click(function () {
                 $(this).next().fadeIn();
-
+                $('body').css('overflow', 'hidden');
             })
 
-            $('.model').click(function () {
+            $('.model').click(function (e) {
                 $('.model').fadeOut();
+                $('body').css('overflow', '');
             })
 
             $('.prev-img').click(function(e){
